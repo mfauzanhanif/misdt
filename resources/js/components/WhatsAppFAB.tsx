@@ -1,7 +1,7 @@
 export default function WhatsAppFAB() {
     return (
         <a
-            href="https://wa.me/6285860783784?text=Assalamu'alaikum,%20saya%20ingin%20bertanya%20tentang%20MI%20Dar%20Al%20Tauhid"
+            href="https://wa.me/6285860783784?text=Assalamu'alaikum,%20saya%20ingin%20bertanya%20tentang%20MIS%20Dar%20Al%20Tauhid"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed right-5 bottom-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition-transform hover:scale-110 hover:bg-green-600"

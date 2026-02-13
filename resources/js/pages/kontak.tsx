@@ -58,7 +58,7 @@ export default function Kontak() {
                                 </svg>
                             </div>
                             <h3 className="font-heading mb-1 text-lg font-bold text-gray-900">Alamat</h3>
-                            <p className="text-sm text-gray-500">Jl. KH. A. Syathori, Arjawinangun, Cirebon 45162</p>
+                            <p className="text-sm text-gray-500">Jl. KH. A. Syathori, RT/RW 02/06, Desa Arjawinangun, Kec. Arjawinangun, Kab. Cirebon, Jawa Barat - 45152</p>
                         </a>
                     </div>
                 </div>

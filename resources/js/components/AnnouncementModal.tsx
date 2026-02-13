@@ -40,7 +40,7 @@ export default function AnnouncementModal() {
                             </svg>
                         </button>
                     </div>
-                    <p className="mt-1 text-sm text-red-100">PPDB T.A 2026-2027</p>
+                    <p className="mt-1 text-sm text-red-100">PPDB T.A. 2026/2027</p>
                 </div>
 
                 {/* Body */}
@@ -61,7 +61,7 @@ export default function AnnouncementModal() {
 
                     <p className="mb-4 text-sm leading-relaxed text-gray-600">
                         Kami mengucapkan terima kasih yang sebesar-besarnya atas kepercayaan Ayah/Bunda kepada MI Dar Al Tauhid.
-                        Bagi calon siswa yang sudah diterima, informasi daftar ulang akan kami sampaikan melalui WhatsApp resmi.
+                        Bagi calon siswa yang mendaftar dan melaksanakan psikotes, informasi terkait hasil psikotes, wawancara, dan daftar ulang akan kami sampaikan melalui WhatsApp resmi.
                     </p>
 
                     <p className="text-right text-xs font-medium text-gray-400">

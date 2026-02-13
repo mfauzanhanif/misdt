@@ -102,7 +102,7 @@ export default function Fasilitas() {
                             Kunjungi MI Dar Al Tauhid dan lihat sendiri fasilitas yang kami sediakan untuk putra-putri Anda.
                         </p>
                         <a
-                            href="https://wa.me/6285860783784?text=Assalamu'alaikum,%20saya%20ingin%20mengunjungi%20MI%20Dar%20Al%20Tauhid"
+                            href="https://wa.me/6285860783784?text=Assalamu'alaikum,%20saya%20ingin%20mengunjungi%20MIS%20Dar%20Al%20Tauhid"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-primary-700"

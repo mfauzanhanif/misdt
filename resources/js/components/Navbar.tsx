@@ -26,7 +26,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3">
                         <img src="/misdt.png" alt="Logo MIS Dar Al Tauhid" className="h-10 w-10 rounded-xl object-contain lg:h-12 lg:w-12" />
-                        <div className="hidden sm:block">
+                        <div>
                             <h1 className="font-heading text-base font-bold leading-tight text-primary-800 lg:text-lg">
                                 MIS Dar Al Tauhid
                             </h1>

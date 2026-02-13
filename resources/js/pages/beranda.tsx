@@ -24,7 +24,7 @@ export default function Beranda() {
                             Dar Al Tauhid
                         </h1>
                         <p className="mx-auto mb-4 max-w-2xl text-lg text-primary-100 sm:text-xl">
-                            Mencetak Generasi Berakhlakul Karimah, Cerdas, dan Kreatif
+                            Mencetak Generasi yang Berakhlakul Karimah, Cerdas, dan Kreatif
                         </p>
                         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                             <Link
@@ -185,7 +185,7 @@ export default function Beranda() {
                     </p>
                     <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                         <a
-                            href="https://wa.me/6285860783784"
+                            href="https://wa.me/6285860783784?text=Assalamu'alaikum,%20saya%20ingin%20bertanya%20tentang%20MIS%20Dar%20Al%20Tauhid"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 rounded-xl bg-green-500 px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-green-600 hover:shadow-xl"
