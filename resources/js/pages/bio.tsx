@@ -26,7 +26,7 @@ export default function Bio() {
         },
         {
             title: 'Lokasi Sekolah',
-            url: 'https://maps.app.goo.gl/859zdnviKuQaSmr67',
+            url: 'https://maps.app.goo.gl/zLM5VQwKF5wGPe78A',
             icon: (
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -122,7 +122,7 @@ export default function Bio() {
 
                     {/* Status badge */}
                     <div className="mt-4 rounded-full border border-gold-400/40 bg-gold-400/10 px-4 py-1.5 backdrop-blur-sm">
-                        <a href="https://maps.app.goo.gl/859zdnviKuQaSmr67" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold tracking-wide text-gold-300">
+                        <a href="https://maps.app.goo.gl/zLM5VQwKF5wGPe78A" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold tracking-wide text-gold-300">
                             📍 Arjawinangun, Cirebon
                         </a>
                     </div>

@@ -46,7 +46,7 @@ export default function Kontak() {
                         </a>
 
                         {/* Alamat */}
-                        <a href="https://maps.app.goo.gl/859zdnviKuQaSmr67"
+                        <a href="https://maps.app.goo.gl/zLM5VQwKF5wGPe78A"
                         target="_blank"
                         rel="noopener noreferrer"
                         className='group rounded-2xl border border-gray-100 bg-white p-8 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg'
@@ -74,7 +74,7 @@ export default function Kontak() {
                     </div>
                     <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-sm">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.756636462316!2d108.40537436961938!3d-6.64362536748503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6eddd779e87db1%3A0x8963b22d8810583f!2sPondok%20Pesantren%20Dar%20Al%20Tauhid%20Ats%20Tsani!5e0!3m2!1sid!2sid!4v1771008308153!5m2!1sid!2sid"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d323.6867037625798!2d108.40616385490118!3d-6.643375383466342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6edd01fcd21027%3A0x6f5e3e35b6abf607!2sMIS%20DAR%20AL%20TAUHID!5e0!3m2!1sid!2sid!4v1771217040645!5m2!1sid!2sid"
                             width="100%"
                             height="400"
                             style={{ border: 0 }}

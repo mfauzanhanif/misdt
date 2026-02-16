@@ -1,6 +1,6 @@
 import { Head } from '@inertiajs/react';
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 import WhatsAppFAB from '@/components/WhatsAppFAB';
 
 interface GuestLayoutProps {
