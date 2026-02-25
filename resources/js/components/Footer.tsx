@@ -9,7 +9,7 @@ export default function Footer() {
                     {/* About */}
                     <div className="lg:col-span-2">
                         <div className="mb-4 flex items-center gap-3">
-                            <img src="/misdt.png" alt="Logo MI Dar Al Tauhid" className="h-10 w-10 rounded-xl object-contain lg:h-12 lg:w-12" />
+                            <img src="/images/logo-misdt.svg" alt="Logo MI Dar Al Tauhid" className="h-10 w-10 rounded-xl object-contain lg:h-12 lg:w-12" />
                             <div>
                                 <h3 className="font-heading text-lg font-bold">MI Dar Al Tauhid</h3>
                                 <p className="text-sm text-primary-200">Arjawinangun, Cirebon</p>
@@ -111,10 +111,10 @@ export default function Footer() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
                                 <a
-                                href="https://wa.me/6285860783784?text=Assalamu'alaikum,%20saya%20ingin%20bertanya%20tentang%20MIS%20Dar%20Al%20Tauhid"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:text-white ">0858-6078-3784</a>
+                                    href="https://wa.me/6285860783784?text=Assalamu'alaikum,%20saya%20ingin%20bertanya%20tentang%20MIS%20Dar%20Al%20Tauhid"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-white ">0858-6078-3784</a>
                             </li>
                             <li className="flex items-center gap-2 text-sm text-primary-200">
                                 <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

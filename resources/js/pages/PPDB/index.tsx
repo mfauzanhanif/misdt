@@ -1,4 +1,5 @@
 import { Link } from '@inertiajs/react';
+import { cek } from '@/routes/PPDB';
 import GuestLayout from '@/layouts/GuestLayout';
 
 export default function Ppdb() {
@@ -13,7 +14,7 @@ export default function Ppdb() {
             </section>
 
             {/* Alert Box */}
-            <section className="bg-gray-50 py-8">
+            <section className="bg-white py-8">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
                     <div className="rounded-2xl border-2 border-red-200 bg-red-50 p-6">
                         <div className="mb-3 flex items-center gap-3">
@@ -31,6 +32,35 @@ export default function Ppdb() {
                             <strong className="uppercase">ditiadakan</strong> karena kuota sudah penuh pada Gelombang 1 (50 siswa).
                             Terima kasih atas kepercayaan Ayah/Bunda.
                         </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Pengumuman Hasil */}
+            <section className="section-padding bg-gray-50">
+                <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+                    <div className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm">
+                        <div className="grid grid-cols-1 items-center gap-6 p-8 md:grid-cols-2 md:gap-10">
+                            <div>
+                                <h2 className="font-heading mb-3 text-2xl font-bold text-gray-900">
+                                    Cek <span className="text-gradient">Hasil Psikotes</span>
+                                </h2>
+                                <p className="text-sm leading-relaxed text-gray-500">
+                                    Bagi calon peserta didik yang sudah mengikuti tes psikotes, silakan cek hasil pengumuman melalui halaman berikut.
+                                </p>
+                            </div>
+                            <div className="text-center md:text-right">
+                                <Link
+                                    href={cek.url()}
+                                    className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-primary-700 hover:shadow-xl"
+                                >
+                                    Lihat Pengumuman
+                                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -182,6 +212,7 @@ export default function Ppdb() {
                     </div> */}
                 </div>
             </section>
+
         </GuestLayout>
     );
 }

@@ -28,7 +28,7 @@ export default function Beranda() {
                         </p>
                         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                             <Link
-                                href="/ppdb"
+                                href="/PPDB"
                                 className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-3.5 text-sm font-semibold text-primary-700 shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
                             >
                                 Info PPDB

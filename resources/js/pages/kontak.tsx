@@ -130,7 +130,7 @@ export default function Kontak() {
                                 </svg>
                             </div>
                             <h3 className="font-heading mb-1 font-bold text-gray-900">Facebook</h3>
-                            <p className="text-sm text-gray-500">Mis Dar Al Tauhid</p>
+                            <p className="text-sm text-gray-500">MIS Dar Al Tauhid</p>
                         </a>
 
                         {/* TikTok */}

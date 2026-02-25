@@ -1,4 +1,4 @@
-import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition } from './../wayfinder'
+import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition } from './../../../../wayfinder'
 /**
 * @see \App\Http\Controllers\Controller::beranda
  * @see app/Http/Controllers/Controller.php:9
@@ -467,3 +467,6 @@ bio.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
     
     bio.form = bioForm
+const Controller = { beranda, profil, program, fasilitas, kontak, bio }
+
+export default Controller
