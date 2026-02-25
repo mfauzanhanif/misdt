@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Surat Keputusan PPDB - {{ $siswa['nama'] }}</title>
     <style>
-        /* Matikan margin bawaan kertas, biarkan Kop Surat mengisi penuh dari ujung ke ujung */
+        /* Matikan margin bawaan kertas */
         @page {
             margin: 0cm;
         }
@@ -13,27 +13,25 @@
         body {
             font-family: 'Times New Roman', Times, serif;
             font-size: 11pt;
-            /* Ukuran font ideal untuk surat resmi 1 halaman */
             line-height: 1.25;
             margin: 0;
             padding: 0;
         }
 
-        /* Kop Surat menempel di atas */
+        /* Area Kop Surat */
         .kop-surat {
-            width: 100%;
-            height: 55mm;
-            /* Sesuai tinggi SVG Mas */
-            /* margin-bottom dihilangkan karena jarak sekarang diatur menggunakan <br> */
+            /* Margin Atas 1cm, Kanan 2.5cm, Bawah 0, Kiri 2.5cm */
+            margin: 1cm 1.5cm 0 1.5cm;
+            text-align: center;
         }
 
         .kop-surat img {
             width: 100%;
-            height: 100%;
+            height: auto; /* Memastikan rasio gambar 2000x512 tetap terjaga */
             display: block;
         }
 
-        /* Area konten surat diberi jarak (padding) dari tepi kertas */
+        /* Area konten surat */
         .content {
             padding: 0 2.5cm 1.5cm 2.5cm;
             /* Atas 0, Kanan 2.5cm, Bawah 1.5cm, Kiri 2.5cm */
@@ -57,7 +55,7 @@
             vertical-align: top;
         }
 
-        /* Tabel Jadwal TANPA KOTAK (Border dihilangkan) */
+        /* Tabel Jadwal TANPA KOTAK */
         .tabel-jadwal {
             margin-top: 5px;
             margin-bottom: 5px;
@@ -85,7 +83,7 @@
             margin: 5px auto;
         }
 
-        /* Reset margin paragraf agar jarak murni diatur oleh <br> dan tidak dobel */
+        /* Reset margin paragraf */
         p {
             margin: 0;
             padding: 0;
@@ -95,7 +93,7 @@
 
 <body>
     <div class="kop-surat">
-        <img src="data:image/svg+xml;base64,{!! base64_encode(file_get_contents(public_path('images/kop-surat.svg'))) !!}"
+        <img src="data:image/png;base64,{!! base64_encode(file_get_contents(public_path('images/kop-surat.png'))) !!}"
             alt="Kop Surat MIS Dar Al Tauhid">
     </div>
 
