@@ -27,6 +27,7 @@ return new class extends Migration
                 'CUKUP RAGU-RAGU',
                 'RAGU-RAGU',
             ])->default('PROSES');
+            $table->string('no_surat')->nullable();
             $table->timestamps();
         });
     }

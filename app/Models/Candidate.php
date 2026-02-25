@@ -18,6 +18,7 @@ class Candidate extends Model
         'tanggal_lahir',
         'jenis_kelamin',
         'hasil_psikotes',
+        'no_surat',
     ];
 
     protected $casts = [

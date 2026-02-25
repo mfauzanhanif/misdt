@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../wayfinder'
 /**
 * @see \App\Http\Controllers\PPDBController::ppdb
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
 export const ppdb = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ ppdb.definition = {
 
 /**
 * @see \App\Http\Controllers\PPDBController::ppdb
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
 ppdb.url = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -44,7 +44,7 @@ ppdb.url = (args: { kode: string | number } | [kode: string | number ] | string 
 
 /**
 * @see \App\Http\Controllers\PPDBController::ppdb
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
 ppdb.get = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -53,7 +53,7 @@ ppdb.get = (args: { kode: string | number } | [kode: string | number ] | string 
 })
 /**
 * @see \App\Http\Controllers\PPDBController::ppdb
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
 ppdb.head = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -63,7 +63,7 @@ ppdb.head = (args: { kode: string | number } | [kode: string | number ] | string
 
     /**
 * @see \App\Http\Controllers\PPDBController::ppdb
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
     const ppdbForm = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -73,7 +73,7 @@ ppdb.head = (args: { kode: string | number } | [kode: string | number ] | string
 
             /**
 * @see \App\Http\Controllers\PPDBController::ppdb
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
         ppdbForm.get = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -82,7 +82,7 @@ ppdb.head = (args: { kode: string | number } | [kode: string | number ] | string
         })
             /**
 * @see \App\Http\Controllers\PPDBController::ppdb
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
         ppdbForm.head = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({

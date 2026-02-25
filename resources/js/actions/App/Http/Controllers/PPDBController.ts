@@ -212,7 +212,7 @@ prosesCek.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
     prosesCek.form = prosesCekForm
 /**
 * @see \App\Http\Controllers\PPDBController::hasil
- * @see app/Http/Controllers/PPDBController.php:77
+ * @see app/Http/Controllers/PPDBController.php:78
  * @route '/PPDB/hasil'
  */
 export const hasil = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -227,7 +227,7 @@ hasil.definition = {
 
 /**
 * @see \App\Http\Controllers\PPDBController::hasil
- * @see app/Http/Controllers/PPDBController.php:77
+ * @see app/Http/Controllers/PPDBController.php:78
  * @route '/PPDB/hasil'
  */
 hasil.url = (options?: RouteQueryOptions) => {
@@ -236,7 +236,7 @@ hasil.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\PPDBController::hasil
- * @see app/Http/Controllers/PPDBController.php:77
+ * @see app/Http/Controllers/PPDBController.php:78
  * @route '/PPDB/hasil'
  */
 hasil.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -245,7 +245,7 @@ hasil.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\PPDBController::hasil
- * @see app/Http/Controllers/PPDBController.php:77
+ * @see app/Http/Controllers/PPDBController.php:78
  * @route '/PPDB/hasil'
  */
 hasil.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -255,7 +255,7 @@ hasil.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
     /**
 * @see \App\Http\Controllers\PPDBController::hasil
- * @see app/Http/Controllers/PPDBController.php:77
+ * @see app/Http/Controllers/PPDBController.php:78
  * @route '/PPDB/hasil'
  */
     const hasilForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -265,7 +265,7 @@ hasil.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
             /**
 * @see \App\Http\Controllers\PPDBController::hasil
- * @see app/Http/Controllers/PPDBController.php:77
+ * @see app/Http/Controllers/PPDBController.php:78
  * @route '/PPDB/hasil'
  */
         hasilForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -274,7 +274,7 @@ hasil.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
         })
             /**
 * @see \App\Http\Controllers\PPDBController::hasil
- * @see app/Http/Controllers/PPDBController.php:77
+ * @see app/Http/Controllers/PPDBController.php:78
  * @route '/PPDB/hasil'
  */
         hasilForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -290,7 +290,7 @@ hasil.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     hasil.form = hasilForm
 /**
 * @see \App\Http\Controllers\PPDBController::downloadSurat
- * @see app/Http/Controllers/PPDBController.php:92
+ * @see app/Http/Controllers/PPDBController.php:93
  * @route '/PPDB/download-surat'
  */
 export const downloadSurat = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -305,7 +305,7 @@ downloadSurat.definition = {
 
 /**
 * @see \App\Http\Controllers\PPDBController::downloadSurat
- * @see app/Http/Controllers/PPDBController.php:92
+ * @see app/Http/Controllers/PPDBController.php:93
  * @route '/PPDB/download-surat'
  */
 downloadSurat.url = (options?: RouteQueryOptions) => {
@@ -314,7 +314,7 @@ downloadSurat.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \App\Http\Controllers\PPDBController::downloadSurat
- * @see app/Http/Controllers/PPDBController.php:92
+ * @see app/Http/Controllers/PPDBController.php:93
  * @route '/PPDB/download-surat'
  */
 downloadSurat.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -323,7 +323,7 @@ downloadSurat.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 })
 /**
 * @see \App\Http\Controllers\PPDBController::downloadSurat
- * @see app/Http/Controllers/PPDBController.php:92
+ * @see app/Http/Controllers/PPDBController.php:93
  * @route '/PPDB/download-surat'
  */
 downloadSurat.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -333,7 +333,7 @@ downloadSurat.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => (
 
     /**
 * @see \App\Http\Controllers\PPDBController::downloadSurat
- * @see app/Http/Controllers/PPDBController.php:92
+ * @see app/Http/Controllers/PPDBController.php:93
  * @route '/PPDB/download-surat'
  */
     const downloadSuratForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -343,7 +343,7 @@ downloadSurat.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => (
 
             /**
 * @see \App\Http\Controllers\PPDBController::downloadSurat
- * @see app/Http/Controllers/PPDBController.php:92
+ * @see app/Http/Controllers/PPDBController.php:93
  * @route '/PPDB/download-surat'
  */
         downloadSuratForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -352,7 +352,7 @@ downloadSurat.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => (
         })
             /**
 * @see \App\Http\Controllers\PPDBController::downloadSurat
- * @see app/Http/Controllers/PPDBController.php:92
+ * @see app/Http/Controllers/PPDBController.php:93
  * @route '/PPDB/download-surat'
  */
         downloadSuratForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -368,7 +368,7 @@ downloadSurat.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => (
     downloadSurat.form = downloadSuratForm
 /**
 * @see \App\Http\Controllers\PPDBController::verifikasi
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
 export const verifikasi = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -383,7 +383,7 @@ verifikasi.definition = {
 
 /**
 * @see \App\Http\Controllers\PPDBController::verifikasi
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
 verifikasi.url = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -411,7 +411,7 @@ verifikasi.url = (args: { kode: string | number } | [kode: string | number ] | s
 
 /**
 * @see \App\Http\Controllers\PPDBController::verifikasi
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
 verifikasi.get = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -420,7 +420,7 @@ verifikasi.get = (args: { kode: string | number } | [kode: string | number ] | s
 })
 /**
 * @see \App\Http\Controllers\PPDBController::verifikasi
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
 verifikasi.head = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -430,7 +430,7 @@ verifikasi.head = (args: { kode: string | number } | [kode: string | number ] | 
 
     /**
 * @see \App\Http\Controllers\PPDBController::verifikasi
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
     const verifikasiForm = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -440,7 +440,7 @@ verifikasi.head = (args: { kode: string | number } | [kode: string | number ] | 
 
             /**
 * @see \App\Http\Controllers\PPDBController::verifikasi
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
         verifikasiForm.get = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -449,7 +449,7 @@ verifikasi.head = (args: { kode: string | number } | [kode: string | number ] | 
         })
             /**
 * @see \App\Http\Controllers\PPDBController::verifikasi
- * @see app/Http/Controllers/PPDBController.php:136
+ * @see app/Http/Controllers/PPDBController.php:137
  * @route '/verifikasi/ppdb/{kode}'
  */
         verifikasiForm.head = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({

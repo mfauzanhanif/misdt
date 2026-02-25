@@ -71,6 +71,7 @@ class PPDBController extends Controller
             'tanggal_lahir' => $tanggalFormatted,
             'jenis_kelamin' => $siswa->jenis_kelamin->value,
             'hasil_psikotes' => $siswa->hasil_psikotes->value,
+            'no_surat' => $siswa->no_surat,
         ]);
     }
 
@@ -118,19 +119,19 @@ class PPDBController extends Controller
                 'tempat_lahir' => $siswa->tempat_lahir,
                 'tanggal_lahir' => $tanggalFormatted,
                 'hasil_psikotes' => $siswa->hasil_psikotes->value,
+                'no_surat' => $siswa->no_surat,
             ],
             'sapaan' => $siswa->jenis_kelamin->value === 'LAKI-LAKI' ? 'Ananda' : 'Adinda',
             'url_validasi' => $urlValidasi
         ];
 
         // 5. Render PDF dengan ukuran F4 (Folio) -> 215.9 mm x 330.2 mm
-        $pdf = Pdf::loadView('pdf.surat-kelulusan', $dataPdf)
+        $pdf = Pdf::loadView('pdf.surat-pengumuman', $dataPdf)
             ->setPaper(array(0, 0, 609.45, 935.43), 'portrait');
 
         // 6. Download file dengan nama dinamis
-        $namaFile = 'Surat_Keputusan_PPDB_' . str_replace(' ', '_', $siswa->nama_lengkap) . '.pdf';
+        $namaFile = 'Surat_Pengumuman_PPDB_' . str_replace(' ', '_', $siswa->nama_lengkap) . '.pdf';
         return $pdf->download($namaFile);
-
     }
 
     public function verifikasi($kode)

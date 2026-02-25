@@ -21,13 +21,13 @@ export default function Hasil({ siswa }: { siswa: Siswa }) {
     // =========================================================================
     const jadwalDiterima = {
         hariTanggal: "Jum'at, 3 April 2026",
-        waktu: "08.00 WIB - Selesai",
+        waktu: "08.00 WIB s.d. Selesai",
         tempat: "MIS Dar Al Tauhid"
     };
 
     const jadwalObservasi = {
         hariTanggal: "Selasa, 3 Maret 2026",
-        waktu: "08.00 WIB - 12.00 WIB",
+        waktu: "08.00 WIB s.d. Selesai",
         tempat: "MIS Dar Al Tauhid"
     };
     // =========================================================================
@@ -36,7 +36,7 @@ export default function Hasil({ siswa }: { siswa: Siswa }) {
         ? { icon: 'bg-primary-100', iconColor: 'text-primary-600', bg: 'border-primary-100 bg-primary-50', badge: 'border-primary-700 bg-primary-600 text-white', label: 'DITERIMA' }
         : isProses
             ? { icon: 'bg-sky-100', iconColor: 'text-sky-600', bg: 'border-sky-100 bg-sky-50', badge: 'border-sky-600 bg-sky-500 text-white', label: 'SEDANG DIPROSES' }
-            : { icon: 'bg-amber-100', iconColor: 'text-amber-600', bg: 'border-amber-100 bg-amber-50', badge: 'border-amber-600 bg-amber-500 text-white', label: 'TAHAP OBSERVASI' };
+            : { icon: 'bg-amber-100', iconColor: 'text-amber-600', bg: 'border-amber-100 bg-amber-50', badge: 'border-amber-600 bg-amber-500 text-white', label: 'OBSERVASI LANJUTAN' };
 
     return (
         <GuestLayout title="Pengumuman Hasil PPDB">
@@ -106,14 +106,14 @@ export default function Hasil({ siswa }: { siswa: Siswa }) {
                                     // ==================================================
                                     <div className="text-sm leading-relaxed text-gray-800 space-y-4">
 
-                                        <p className="font-bold italic mt-5">Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+                                        <p className="font-bold italic mt-5">Assalamu&apos;alaikum Warahmatullahi Wabarakatuh</p>
 
                                         <p className="text-justify">
                                             Salam silaturahim kami sampaikan semoga Bapak/Ibu selalu dalam limpahan karunia dan rahmat Allah SWT. <em>Aamiin.</em>
                                         </p>
 
                                         <p className="text-justify">
-                                            Hasil Keputusan Panitia Penerimaan Peserta Didik Baru MIS Dar Al Tauhid Tahun Pelajaran 2026/2027, dengan ini menetapkan :
+                                            Hasil Keputusan Panitia Penerimaan Peserta Didik Baru MIS Dar Al Tauhid Tahun Pelajaran 2026/2027, dengan ini menetapkan:
                                         </p>
 
                                         {/* Tabel Identitas */}
@@ -138,7 +138,7 @@ export default function Hasil({ siswa }: { siswa: Siswa }) {
                                             // -- KONTEN SURAT UNTUK YANG "SIAP" --
                                             <>
                                                 <p className="text-justify">
-                                                    Berdasarkan hasil Psikotes Penerimaan Peserta Didik  Tahun Ajaran 2026/2027 terhadap {Sapaan} <strong className="capitalize">{siswa.nama}</strong> dinyatakan <strong>{siswa.hasil_psikotes}</strong> dan <strong className="text-primary-700">LULUS</strong>. Selanjutnya, kami memohon untuk senantiasa melaksanakan Wawancara, Daftar Ulang dan Pengukuran Seragam pada:
+                                                    Berdasarkan hasil Psikotes Penerimaan Peserta Didik Baru Tahun Ajaran 2026/2027 terhadap {Sapaan} <strong className="capitalize">{siswa.nama}</strong> dinyatakan <strong>{siswa.hasil_psikotes}</strong> dan <strong className="text-primary-700">DITERIMA</strong>. Selanjutnya, kami mengundang Bapak/Ibu beserta {Sapaan} untuk mengikuti tahapan <strong>Daftar Ulang</strong>, <strong>Wawancara</strong>, dan <strong>Pengukuran Seragam</strong>, yang akan dilaksanakan pada:
                                                 </p>
 
                                                 <div className="pl-4 py-2 bg-gray-50 rounded-lg border border-gray-200 p-4 mt-3 mb-3 shadow-sm">
@@ -165,14 +165,14 @@ export default function Hasil({ siswa }: { siswa: Siswa }) {
 
                                                 {/* Informasi Tambahan Pembayaran 50% */}
                                                 <p className="text-sm text-primary-900">
-                                                    Saat pelaksanaan daftar ulang, Bapak/Ibu wali murid diperkenankan untuk melakukan pelunasan biaya administrasi <strong>minimal sebesar 50%</strong> dari total biaya yang telah ditentukan.
+                                                    Saat pelaksanaan daftar ulang, Bapak/Ibu diperkenankan untuk melunasi biaya pendaftaran <strong>minimal 50%</strong> dari total biaya yang telah ditentukan.
                                                 </p>
                                             </>
                                         ) : (
                                             // -- KONTEN SURAT UNTUK YANG "RAGU-RAGU / CUKUP RAGU-RAGU" --
                                             <>
                                                 <p className="text-justify">
-                                                    Berdasarkan hasil Psikotes Penerimaan Peserta Didik  Tahun Ajaran 2026/2027 terhadap {Sapaan} <strong className="capitalize">{siswa.nama}</strong> dinyatakan <strong>{siswa.hasil_psikotes}</strong>. Selanjutnya, kami mengundang Bapak/Ibu beserta ananda untuk mengikuti tahap <strong>Observasi Lanjutan</strong> pada:
+                                                    Berdasarkan hasil Psikotes Penerimaan Peserta Didik Baru Tahun Ajaran 2026/2027 terhadap {Sapaan} <strong className="capitalize">{siswa.nama}</strong> dinyatakan <strong>{siswa.hasil_psikotes}</strong>. Selanjutnya, kami mengundang Bapak/Ibu beserta {Sapaan} untuk mengikuti tahapan <strong>Observasi Lanjutan</strong>, yang akan dilaksanakan pada:
                                                 </p>
 
                                                 <div className="pl-4 py-2 bg-gray-50 rounded-lg border border-gray-200 p-4 mt-3 mb-3 shadow-sm">
@@ -200,10 +200,10 @@ export default function Hasil({ siswa }: { siswa: Siswa }) {
                                         )}
 
                                         <p className="text-justify mt-4">
-                                            Demikian pemberitahuan ini kami sampaikan, atas perhatian dan kerjasamanya kami ucapkan terimakasih.
+                                            Demikian pengumuman ini kami sampaikan, atas perhatian dan kerjasamanya kami ucapkan terimakasih.
                                         </p>
 
-                                        <p className="font-bold italic mt-5">Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+                                        <p className="font-bold italic mt-5">Wassalamu&apos;alaikum Warahmatullahi Wabarakatuh</p>
                                     </div>
                                 )}
                             </div>
@@ -211,7 +211,7 @@ export default function Hasil({ siswa }: { siswa: Siswa }) {
 
                         {/* Area Tombol Aksi */}
                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                            {/* Tombol Kembali (Yang Sudah Ada) */}
+                            {/* Tombol Kembali */}
                             <Link
                                 href={cek.url()}
                                 className="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-gray-200 px-6 py-3 text-sm font-semibold text-gray-700 transition-all hover:border-primary-200 hover:bg-primary-50 hover:text-primary-700"
@@ -221,8 +221,8 @@ export default function Hasil({ siswa }: { siswa: Siswa }) {
                                 </svg>
                                 Kembali ke Pencarian
                             </Link>
-                            {/* Tombol Download Surat PDF (BARU) */}
-                            {/* Kita render tombol ini HANYA jika statusnya SIAP atau RAGU-RAGU (Bukan PROSES) */}
+
+                            {/* Tombol Download Surat PDF */}
                             {!isProses && (
                                 <a
                                     href={`/PPDB/download-surat?nik=${siswa.nik}`}
