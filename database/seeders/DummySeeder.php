@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
 use App\Models\Candidate;
 
 class DummySeeder extends Seeder
@@ -10,7 +11,7 @@ class DummySeeder extends Seeder
     public function run(): void
     {
         Candidate::insert([
-           [
+            [
                 'nik' => '3213062112010001',
                 'nama_lengkap' => 'M Fauzan Hanif',
                 'tempat_lahir' => 'Subang',
@@ -18,6 +19,7 @@ class DummySeeder extends Seeder
                 'jenis_kelamin' => 'LAKI-LAKI',
                 'hasil_psikotes' => 'SIAP',
                 'no_surat' => '001',
+                'kode_verifikasi' => Str::random(16),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -29,6 +31,7 @@ class DummySeeder extends Seeder
                 'jenis_kelamin' => 'PEREMPUAN',
                 'hasil_psikotes' => 'CUKUP RAGU-RAGU',
                 'no_surat' => '002',
+                'kode_verifikasi' => Str::random(16),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -40,10 +43,10 @@ class DummySeeder extends Seeder
                 'jenis_kelamin' => 'LAKI-LAKI',
                 'hasil_psikotes' => 'PROSES',
                 'no_surat' => '003',
+                'kode_verifikasi' => Str::random(16),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
         ]);
     }
 }
-

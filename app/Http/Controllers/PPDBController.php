@@ -7,8 +7,6 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Barryvdh\DomPDF\Facade\Pdf;
-use Illuminate\Support\Facades\Crypt;
-use Illuminate\Contracts\Encryption\DecryptException;
 
 class PPDBController extends Controller
 {
@@ -106,10 +104,12 @@ class PPDBController extends Controller
         $bulanIndo = [1 => 'Januari', 2 => 'Februari', 3 => 'Maret', 4 => 'April', 5 => 'Mei', 6 => 'Juni', 7 => 'Juli', 8 => 'Agustus', 9 => 'September', 10 => 'Oktober', 11 => 'November', 12 => 'Desember'];
         $tanggalFormatted = $tgl->day . ' ' . $bulanIndo[$tgl->month] . ' ' . $tgl->year;
 
-        // 3. Buat URL Validasi (Enkripsi NIK agar aman)
-        $kodeUnik = Crypt::encryptString($siswa->nik);
-        // Nanti route 'validasi' ini bisa Mas buat belakangan
-        $urlValidasi = url('/verifikasi/ppdb/' . $kodeUnik);
+        // 3. Buat URL Validasi menggunakan kode verifikasi pendek
+        if (empty($siswa->kode_verifikasi)) {
+            $siswa->kode_verifikasi = \Illuminate\Support\Str::random(16);
+            $siswa->save();
+        }
+        $urlValidasi = url('/verifikasi/ppdb/' . $siswa->kode_verifikasi);
 
         // 4. Siapkan Data untuk View PDF
         $dataPdf = [
@@ -136,23 +136,12 @@ class PPDBController extends Controller
 
     public function verifikasi($kode)
     {
-        // 1. Coba pecahkan kode enkripsinya
-        try {
-            $nik = Crypt::decryptString($kode);
-        } catch (DecryptException $e) {
-            // Jika kode gagal dipecahkan (QR Code palsu / URL dimodifikasi)
-            return Inertia::render('PPDB/verifikasi', [
-                'status_validasi' => 'INVALID',
-                'pesan' => 'Kode QR tidak valid atau tautan telah dimodifikasi.'
-            ]);
-        }
-
-        // 2. Cari data siswa berdasarkan NIK
-        $siswa = Candidate::where('nik', $nik)->first();
+        // 1. Cari data siswa berdasarkan kode verifikasi
+        $siswa = Candidate::where('kode_verifikasi', $kode)->first();
 
         if (!$siswa) {
             return Inertia::render('PPDB/verifikasi', [
-                'status_validasi' => 'TIDAK_DITEMUKAN',
+                'status_validasi' => 'INVALID',
                 'pesan' => 'Dokumen ini memuat data yang tidak terdaftar di sistem kami.'
             ]);
         }
