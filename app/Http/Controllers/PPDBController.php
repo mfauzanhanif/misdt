@@ -127,7 +127,7 @@ class PPDBController extends Controller
 
         // 5. Render PDF dengan ukuran F4 (Folio) -> 215.9 mm x 330.2 mm
         $pdf = Pdf::loadView('pdf.surat-pengumuman', $dataPdf)
-            ->setPaper(array(0, 0, 609.45, 935.43), 'portrait');
+            ->setPaper([0, 0, 609.45, 935.43], 'portrait');
 
         // 6. Download file dengan nama dinamis
         $namaFile = 'Surat_Pengumuman_PPDB_' . str_replace(' ', '_', $siswa->nama_lengkap) . '.pdf';
