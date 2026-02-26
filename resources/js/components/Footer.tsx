@@ -9,7 +9,7 @@ export default function Footer() {
                     {/* About */}
                     <div className="lg:col-span-2">
                         <div className="mb-4 flex items-center gap-3">
-                            <img src="/images/logo-misdt.svg" alt="Logo MI Dar Al Tauhid" className="h-10 w-10 rounded-xl object-contain lg:h-12 lg:w-12" />
+                            <img src="/images/logo-misdt.svg" alt="Logo MI Dar Al Tauhid" width="48" height="48" loading="lazy" className="h-10 w-10 rounded-xl object-contain lg:h-12 lg:w-12" />
                             <div>
                                 <h3 className="font-heading text-lg font-bold">MI Dar Al Tauhid</h3>
                                 <p className="text-sm text-primary-200">Arjawinangun, Cirebon</p>

@@ -86,6 +86,19 @@ export default function Bio() {
                     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
                     rel="stylesheet"
                 />
+                <meta name="description" content="Link Profil Resmi MIS Dar Al Tauhid - Hubungi Admin, Website Resmi, dan Sosial Media kami." />
+
+                {/* Open Graph / Facebook / WhatsApp */}
+                <meta property="og:type" content="profile" />
+                <meta property="og:title" content="Bio Link - MIS Dar Al Tauhid" />
+                <meta property="og:description" content="Hubungi Admin, Kunjungi Website Resmi, dan temukan Lokasi MIS Dar Al Tauhid." />
+                <meta property="og:image" content="/images/Gedung.webp" />
+
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Bio Link - MIS Dar Al Tauhid" />
+                <meta name="twitter:description" content="Link Profil Resmi MIS Dar Al Tauhid." />
+                <meta name="twitter:image" content="/images/Gedung.webp" />
             </Head>
 
             <div className="relative flex min-h-screen flex-col items-center overflow-hidden bg-gradient-to-b from-primary-900 via-primary-800 to-primary-950 px-4 py-12">
@@ -100,8 +113,11 @@ export default function Bio() {
                     <div className="group relative mb-4">
                         <div className="h-28 w-28 overflow-hidden rounded-full bg-white p-1 shadow-2xl ring-4 ring-gold-400 transition-transform duration-300 group-hover:scale-105">
                             <img
-                                src="/misdt.png"
+                                src="/images/logo-misdt.svg"
                                 alt="Logo MIS Dar Al Tauhid"
+                                width="112"
+                                height="112"
+                                fetchPriority="high"
                                 className="h-full w-full object-contain p-1"
                             />
                         </div>

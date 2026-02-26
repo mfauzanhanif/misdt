@@ -7,6 +7,7 @@
 
     <title inertia>{{ config('app.name', 'MIS Dar Al Tauhid') }}</title>
 
+    <link rel="preload" as="image" href="/images/Gedung.webp">
     <link rel="icon" href="/images/logo-misdt.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/images/logo-misdt.svg">
 

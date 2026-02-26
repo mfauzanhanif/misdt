@@ -19,6 +19,18 @@ export default function GuestLayout({ title, children }: GuestLayoutProps) {
                     rel="stylesheet"
                 />
                 <meta name="description" content="MI Dar Al Tauhid - Madrasah Ibtidaiyah di Arjawinangun, Cirebon. Mencetak generasi berakhlakul karimah, cerdas, dan kreatif." />
+
+                {/* Open Graph / Facebook / WhatsApp */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content={title ? `${title} - MIS Dar Al Tauhid` : 'MIS Dar Al Tauhid'} />
+                <meta property="og:description" content="Madrasah Ibtidaiyah di Arjawinangun, Cirebon. Mencetak generasi berakhlakul karimah, cerdas, dan kreatif." />
+                <meta property="og:image" content="/images/Gedung.webp" />
+
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={title ? `${title} - MIS Dar Al Tauhid` : 'MIS Dar Al Tauhid'} />
+                <meta name="twitter:description" content="Madrasah Ibtidaiyah di Arjawinangun, Cirebon." />
+                <meta name="twitter:image" content="/images/Gedung.webp" />
             </Head>
 
             <div className="min-h-screen bg-gray-50">

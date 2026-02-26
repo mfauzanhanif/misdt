@@ -47,7 +47,7 @@ export default function Navbar() {
                 <div className="flex h-16 items-center justify-between lg:h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3">
-                        <img src="/images/logo-misdt.svg" alt="Logo MIS Dar Al Tauhid" className="h-10 w-10 rounded-xl object-contain lg:h-12 lg:w-12" />
+                        <img src="/images/logo-misdt.svg" alt="Logo MIS Dar Al Tauhid" width="48" height="48" fetchPriority="high" className="h-10 w-10 rounded-xl object-contain lg:h-12 lg:w-12" />
                         <div>
                             <h1 className="font-heading text-base font-bold leading-tight text-primary-800 lg:text-lg">
                                 MIS Dar Al Tauhid

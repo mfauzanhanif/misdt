@@ -1,16 +1,19 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Meneruskan header authorization (Krusial untuk autentikasi API/Sanctum)
+    # 1. PAKSA HTTPS DI TITIK TERDEPAN (Mencegah redirect berlapis)
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # 2. Meneruskan header authorization (Krusial untuk Sanctum/API)
     RewriteCond %{HTTP:Authorization} ^(.*)
     RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
 
-    # Menyembunyikan daftar direktori jika index file tidak ditemukan
+    # 3. Menyembunyikan daftar direktori untuk keamanan
     Options -Indexes
 
-    # Mengabaikan aturan ini jika request sudah mengarah ke dalam folder /public/
+    # 4. SILENT REWRITE: Arahkan semua request ke folder public secara diam-diam
+    # Tanpa flag R=301 di sini agar browser tidak mendeteksi adanya pengalihan
     RewriteCond %{REQUEST_URI} !^/public/
-
-    # Mengarahkan semua request ke folder public
     RewriteRule ^(.*)$ public/$1 [L,QSA]
 </IfModule>

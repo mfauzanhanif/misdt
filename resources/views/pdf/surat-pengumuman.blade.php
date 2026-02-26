@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Surat Pengumuman PPDB - {{ $siswa['nama'] }}</title>
+    <link rel="preload" as="image" href="/images/kop-surat.webp"></style>
     <style>
         /* Pengaturan ukuran kertas F4 dan margin dihandle langsung oleh DomPDF melalui @page */
         @page {
@@ -125,7 +126,7 @@
 
 <body>
     <div class="kop-surat">
-        <img src="data:image/png;base64,{!! base64_encode(file_get_contents(public_path('images/kop-surat.png'))) !!}"
+        <img src="data:image/png;base64,{!! base64_encode(file_get_contents(public_path('images/kop-surat.webp'))) !!}"
             alt="Kop Surat MIS Dar Al Tauhid">
     </div>
 

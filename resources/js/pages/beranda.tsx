@@ -11,7 +11,7 @@ export default function Beranda() {
             <section className="relative overflow-hidden">
                 {/* Background Image */}
                 <div className="absolute inset-0">
-                    <img src="/images/Gedung.jpg" alt="Gedung MIS Dar Al Tauhid" className="h-full w-full object-cover" />
+                    <img src="/images/Gedung.webp" alt="Gedung MIS Dar Al Tauhid" width="1152" height="864" fetchPriority="high" className="h-full w-full object-cover" />
                     <div className="absolute inset-0 bg-primary-900/75" />
                 </div>
 
@@ -120,27 +120,35 @@ export default function Beranda() {
                             {
                                 title: 'Market Day',
                                 desc: 'Belajar wirausaha sejak dini melalui kegiatan jual beli di lingkungan sekolah.',
-                                image: '/images/Market Day.jpg',
+                                image: '/images/Market Day.webp',
+                                width: 1920,
+                                height: 1080,
                             },
                             {
                                 title: 'Outing Class',
                                 desc: 'Pembelajaran di luar kelas untuk pengalaman belajar yang lebih menyenangkan.',
-                                image: '/images/Outing Class.jpg',
+                                image: '/images/Outing Class.webp',
+                                width: 6000,
+                                height: 3376,
                             },
                             {
                                 title: 'Bilingual Class',
                                 desc: 'Pengembangan kemampuan bahasa Inggris dan Arab secara intensif.',
-                                image: '/images/KBM.jpeg',
+                                image: '/images/KBM.webp',
+                                width: 1280,
+                                height: 960,
                             },
                             {
                                 title: 'Tahfidz',
                                 desc: 'Program hafalan Al-Qur\'an dengan target Juz 30, 29, dan 1.',
-                                image: '/images/Yanbua.jpg',
+                                image: '/images/Yanbua.webp',
+                                width: 1280,
+                                height: 960,
                             },
                         ].map((item) => (
                             <div key={item.title} className="group overflow-hidden rounded-2xl bg-gray-50 transition-all hover:-translate-y-1 hover:shadow-lg">
                                 <div className="h-40 overflow-hidden">
-                                    <img src={item.image} alt={item.title} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                                    <img src={item.image} alt={item.title} width={item.width} height={item.height} loading="lazy" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
                                 </div>
                                 <div className="p-5">
                                     <h3 className="font-heading mb-1 font-semibold text-gray-900">{item.title}</h3>

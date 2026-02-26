@@ -50,7 +50,7 @@ export default function Program() {
                         {/* Bilingual Class */}
                         <div className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
                             <div className="h-48 overflow-hidden">
-                                <img src="/images/KBM.jpeg" alt="Bilingual Class" className="h-full w-full object-cover" />
+                                <img src="/images/KBM.webp" alt="Bilingual Class" width="1280" height="960" loading="lazy" className="h-full w-full object-cover" />
                             </div>
                             <div className="p-6">
                                 <h3 className="font-heading mb-2 text-xl font-bold text-gray-900">Bilingual Class</h3>
@@ -74,7 +74,7 @@ export default function Program() {
                         {/* Tahfidz */}
                         <div className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
                             <div className="h-48 overflow-hidden">
-                                <img src="/images/KBM.jpeg" alt="Tahfidz Al-Qur'an" className="h-full w-full object-cover" />
+                                <img src="/images/KBM.webp" alt="Tahfidz Al-Qur'an" width="1280" height="960" loading="lazy" className="h-full w-full object-cover" />
                             </div>
                             <div className="p-6">
                                 <h3 className="font-heading mb-2 text-xl font-bold text-gray-900">Tahfidz Al-Qur'an</h3>
@@ -98,7 +98,7 @@ export default function Program() {
                         {/* Metode Yanbu'a */}
                         <div className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
                             <div className="h-48 overflow-hidden">
-                                <img src="/images/KBM.jpeg" alt="Metode Yanbu'a" className="h-full w-full object-cover" />
+                                <img src="/images/KBM.webp" alt="Metode Yanbu'a" width="1280" height="960" loading="lazy" className="h-full w-full object-cover" />
                             </div>
                             <div className="p-6">
                                 <h3 className="font-heading mb-2 text-xl font-bold text-gray-900">Metode Yanbu'a</h3>
