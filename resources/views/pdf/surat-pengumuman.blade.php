@@ -84,11 +84,11 @@
         }
 
         .ttd-area td.kosong {
-            width: 55%;
+            width: 65%;
         }
 
         .ttd-area td.isi {
-            width: 45%;
+            width: 35%;
             text-align: left;
         }
 
@@ -183,7 +183,8 @@
             Berdasarkan hasil Psikotes Penerimaan Peserta Didik Baru Tahun Ajaran 2026/2027 terhadap {{ $sapaan }}
             <strong style="text-transform: capitalize;">{{ $siswa['nama'] }}</strong> dinyatakan
             <strong>{{ $siswa['hasil_psikotes'] }}</strong> dan <strong>DITERIMA</strong>. Selanjutnya, kami mengundang
-            Bapak/Ibu beserta {{ $sapaan }} untuk mengikuti tahapan <strong>Daftar Ulang</strong>, <strong>Wawancara</strong>,
+            Bapak/Ibu beserta {{ $sapaan }} untuk mengikuti tahapan <strong>Daftar Ulang</strong>,
+            <strong>Wawancara</strong>,
             dan <strong>Pengukuran Seragam</strong>, yang akan dilaksanakan pada:
         </p>
 
@@ -252,7 +253,7 @@
                 Kepala MIS Dar Al Tauhid<br>
 
                 <div class="qr-code">
-                    <img src="data:image/svg+xml;base64,{!! base64_encode(QrCode::format('svg')->size(70)->margin(0)->generate($url_validasi)) !!}"
+                    <img src="data:image/svg+xml;base64,{!! base64_encode(QrCode::format('svg')->size(100)->margin(0)->generate($url_validasi)) !!}"
                         alt="QR Code Validasi">
                 </div>
 

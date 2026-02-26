@@ -28,6 +28,7 @@ return new class extends Migration
                 'RAGU-RAGU',
             ])->default('PROSES');
             $table->string('no_surat')->nullable();
+            $table->string('kode_verifikasi', 20)->unique()->nullable();
             $table->timestamps();
         });
     }
