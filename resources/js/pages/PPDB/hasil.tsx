@@ -27,7 +27,7 @@ export default function Hasil({ siswa }: { siswa: Siswa }) {
 
     const jadwalObservasi = {
         hariTanggal: "Selasa, 3 Maret 2026",
-        waktu: "08.00 WIB s.d. Selesai",
+        waktu: "11.00 WIB s.d. Selesai",
         tempat: "MIS Dar Al Tauhid"
     };
     // =========================================================================

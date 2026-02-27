@@ -229,7 +229,7 @@
             <tr>
                 <td>Waktu</td>
                 <td>:</td>
-                <td>08.00 WIB s.d. Selesai</td>
+                <td>11.00 WIB s.d. Selesai</td>
             </tr>
             <tr>
                 <td>Tempat</td>
@@ -245,7 +245,7 @@
 
     <p><strong><em>Wassalamu’alaikum Warahmatullahi Wabarakatuh</em></strong></p>
     <br>
-    <p style="text-align: right;">Arjawinangun, 27 Februari 2026</p>
+    <p style="text-align: right;">Arjawinangun, 28 Februari 2026</p>
 
     <table class="ttd-area">
         <tr>
