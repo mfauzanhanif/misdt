@@ -1,4 +1,4 @@
-import { queryParams, type RouteQueryOptions, type RouteDefinition, applyUrlDefaults } from './../../wayfinder'
+import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../wayfinder'
 /**
 * @see \App\Http\Controllers\PPDBController::ppdb
  * @see app/Http/Controllers/PPDBController.php:137
@@ -60,6 +60,42 @@ ppdb.head = (args: { kode: string | number } | [kode: string | number ] | string
     url: ppdb.url(args, options),
     method: 'head',
 })
+
+    /**
+* @see \App\Http\Controllers\PPDBController::ppdb
+ * @see app/Http/Controllers/PPDBController.php:137
+ * @route '/verifikasi/ppdb/{kode}'
+ */
+    const ppdbForm = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+        action: ppdb.url(args, options),
+        method: 'get',
+    })
+
+            /**
+* @see \App\Http\Controllers\PPDBController::ppdb
+ * @see app/Http/Controllers/PPDBController.php:137
+ * @route '/verifikasi/ppdb/{kode}'
+ */
+        ppdbForm.get = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: ppdb.url(args, options),
+            method: 'get',
+        })
+            /**
+* @see \App\Http\Controllers\PPDBController::ppdb
+ * @see app/Http/Controllers/PPDBController.php:137
+ * @route '/verifikasi/ppdb/{kode}'
+ */
+        ppdbForm.head = (args: { kode: string | number } | [kode: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: ppdb.url(args, {
+                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
+                            _method: 'HEAD',
+                            ...(options?.query ?? options?.mergeQuery ?? {}),
+                        }
+                    }),
+            method: 'get',
+        })
+    
+    ppdb.form = ppdbForm
 const verifikasi = {
     ppdb: Object.assign(ppdb, ppdb),
 }

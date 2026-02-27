@@ -1,4 +1,4 @@
-import { queryParams, type RouteQueryOptions, type RouteDefinition } from './../wayfinder'
+import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition } from './../wayfinder'
 /**
 * @see \App\Http\Controllers\Controller::beranda
  * @see app/Http/Controllers/Controller.php:9
@@ -42,6 +42,41 @@ beranda.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     method: 'head',
 })
 
+    /**
+* @see \App\Http\Controllers\Controller::beranda
+ * @see app/Http/Controllers/Controller.php:9
+ * @route '/'
+ */
+    const berandaForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+        action: beranda.url(options),
+        method: 'get',
+    })
+
+            /**
+* @see \App\Http\Controllers\Controller::beranda
+ * @see app/Http/Controllers/Controller.php:9
+ * @route '/'
+ */
+        berandaForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: beranda.url(options),
+            method: 'get',
+        })
+            /**
+* @see \App\Http\Controllers\Controller::beranda
+ * @see app/Http/Controllers/Controller.php:9
+ * @route '/'
+ */
+        berandaForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: beranda.url({
+                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
+                            _method: 'HEAD',
+                            ...(options?.query ?? options?.mergeQuery ?? {}),
+                        }
+                    }),
+            method: 'get',
+        })
+    
+    beranda.form = berandaForm
 /**
 * @see \App\Http\Controllers\Controller::profil
  * @see app/Http/Controllers/Controller.php:14
@@ -85,6 +120,41 @@ profil.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     method: 'head',
 })
 
+    /**
+* @see \App\Http\Controllers\Controller::profil
+ * @see app/Http/Controllers/Controller.php:14
+ * @route '/profil'
+ */
+    const profilForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+        action: profil.url(options),
+        method: 'get',
+    })
+
+            /**
+* @see \App\Http\Controllers\Controller::profil
+ * @see app/Http/Controllers/Controller.php:14
+ * @route '/profil'
+ */
+        profilForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: profil.url(options),
+            method: 'get',
+        })
+            /**
+* @see \App\Http\Controllers\Controller::profil
+ * @see app/Http/Controllers/Controller.php:14
+ * @route '/profil'
+ */
+        profilForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: profil.url({
+                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
+                            _method: 'HEAD',
+                            ...(options?.query ?? options?.mergeQuery ?? {}),
+                        }
+                    }),
+            method: 'get',
+        })
+    
+    profil.form = profilForm
 /**
 * @see \App\Http\Controllers\Controller::program
  * @see app/Http/Controllers/Controller.php:19
@@ -128,6 +198,41 @@ program.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     method: 'head',
 })
 
+    /**
+* @see \App\Http\Controllers\Controller::program
+ * @see app/Http/Controllers/Controller.php:19
+ * @route '/program'
+ */
+    const programForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+        action: program.url(options),
+        method: 'get',
+    })
+
+            /**
+* @see \App\Http\Controllers\Controller::program
+ * @see app/Http/Controllers/Controller.php:19
+ * @route '/program'
+ */
+        programForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: program.url(options),
+            method: 'get',
+        })
+            /**
+* @see \App\Http\Controllers\Controller::program
+ * @see app/Http/Controllers/Controller.php:19
+ * @route '/program'
+ */
+        programForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: program.url({
+                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
+                            _method: 'HEAD',
+                            ...(options?.query ?? options?.mergeQuery ?? {}),
+                        }
+                    }),
+            method: 'get',
+        })
+    
+    program.form = programForm
 /**
 * @see \App\Http\Controllers\Controller::fasilitas
  * @see app/Http/Controllers/Controller.php:24
@@ -171,6 +276,41 @@ fasilitas.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     method: 'head',
 })
 
+    /**
+* @see \App\Http\Controllers\Controller::fasilitas
+ * @see app/Http/Controllers/Controller.php:24
+ * @route '/fasilitas'
+ */
+    const fasilitasForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+        action: fasilitas.url(options),
+        method: 'get',
+    })
+
+            /**
+* @see \App\Http\Controllers\Controller::fasilitas
+ * @see app/Http/Controllers/Controller.php:24
+ * @route '/fasilitas'
+ */
+        fasilitasForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: fasilitas.url(options),
+            method: 'get',
+        })
+            /**
+* @see \App\Http\Controllers\Controller::fasilitas
+ * @see app/Http/Controllers/Controller.php:24
+ * @route '/fasilitas'
+ */
+        fasilitasForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: fasilitas.url({
+                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
+                            _method: 'HEAD',
+                            ...(options?.query ?? options?.mergeQuery ?? {}),
+                        }
+                    }),
+            method: 'get',
+        })
+    
+    fasilitas.form = fasilitasForm
 /**
 * @see \App\Http\Controllers\Controller::kontak
  * @see app/Http/Controllers/Controller.php:29
@@ -214,6 +354,41 @@ kontak.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     method: 'head',
 })
 
+    /**
+* @see \App\Http\Controllers\Controller::kontak
+ * @see app/Http/Controllers/Controller.php:29
+ * @route '/kontak'
+ */
+    const kontakForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+        action: kontak.url(options),
+        method: 'get',
+    })
+
+            /**
+* @see \App\Http\Controllers\Controller::kontak
+ * @see app/Http/Controllers/Controller.php:29
+ * @route '/kontak'
+ */
+        kontakForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: kontak.url(options),
+            method: 'get',
+        })
+            /**
+* @see \App\Http\Controllers\Controller::kontak
+ * @see app/Http/Controllers/Controller.php:29
+ * @route '/kontak'
+ */
+        kontakForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: kontak.url({
+                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
+                            _method: 'HEAD',
+                            ...(options?.query ?? options?.mergeQuery ?? {}),
+                        }
+                    }),
+            method: 'get',
+        })
+    
+    kontak.form = kontakForm
 /**
 * @see \App\Http\Controllers\Controller::bio
  * @see app/Http/Controllers/Controller.php:34
@@ -256,3 +431,39 @@ bio.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
     url: bio.url(options),
     method: 'head',
 })
+
+    /**
+* @see \App\Http\Controllers\Controller::bio
+ * @see app/Http/Controllers/Controller.php:34
+ * @route '/bio'
+ */
+    const bioForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+        action: bio.url(options),
+        method: 'get',
+    })
+
+            /**
+* @see \App\Http\Controllers\Controller::bio
+ * @see app/Http/Controllers/Controller.php:34
+ * @route '/bio'
+ */
+        bioForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: bio.url(options),
+            method: 'get',
+        })
+            /**
+* @see \App\Http\Controllers\Controller::bio
+ * @see app/Http/Controllers/Controller.php:34
+ * @route '/bio'
+ */
+        bioForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
+            action: bio.url({
+                        [options?.mergeQuery ? 'mergeQuery' : 'query']: {
+                            _method: 'HEAD',
+                            ...(options?.query ?? options?.mergeQuery ?? {}),
+                        }
+                    }),
+            method: 'get',
+        })
+    
+    bio.form = bioForm
