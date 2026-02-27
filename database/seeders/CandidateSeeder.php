@@ -627,7 +627,7 @@ class CandidateSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'nik' => '1234567891234567',
+                'nik' => '3209242409190001',
                 'nama_lengkap' => 'DHEFIN EL FATIH',
                 'tempat_lahir' => 'Cirebon',
                 'tanggal_lahir' => '2019-06-10',
