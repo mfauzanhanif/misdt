@@ -15,12 +15,12 @@ export default function Index() {
     };
 
     return (
-        <GuestLayout title="Pengumuman Hasil Psikotes PPDB">
+        <GuestLayout title="Pengumuman Penerimaan Peserta Didik Baru">
             {/* Header */}
             <section className="bg-gradient-to-br from-primary-800 to-primary-900 py-16 text-white">
                 <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-                    <h1 className="font-heading mb-3 text-4xl font-bold">Pengumuman Hasil Psikotes</h1>
-                    <p className="text-primary-200">Penerimaan Peserta Didik Baru — Tahun Ajaran 2026/2027</p>
+                    <h1 className="font-heading mb-3 text-4xl font-bold">Pengumuman Penerimaan Peserta Didik Baru</h1>
+                    <p className="text-primary-200">Tahun Ajaran 2026/2027</p>
                 </div>
             </section>
 
@@ -29,7 +29,7 @@ export default function Index() {
                 <div className="mx-auto max-w-lg px-4 sm:px-6 lg:px-8">
                     <div className="mb-8 text-center">
                         <h2 className="font-heading mb-3 text-2xl font-bold text-gray-900">
-                            Cek <span className="text-gradient">Hasil</span> Psikotes
+                            Cek <span className="text-gradient">Penerimaan</span> Peserta Didik Baru
                         </h2>
                         <p className="text-sm text-gray-500">
                             Masukkan NIK dan tanggal lahir anak untuk melihat hasil
@@ -89,7 +89,7 @@ export default function Index() {
                                         Memeriksa Data...
                                     </>
                                 ) : (
-                                    'Cek Hasil Psikotes'
+                                    'Cek Penerimaan Peserta Didik Baru'
                                 )}
                             </button>
                         </form>
